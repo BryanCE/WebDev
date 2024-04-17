@@ -1,0 +1,22 @@
+services:
+  NextDB:
+    container_name: Next-Postgres
+    image: postgres:16.2
+    restart: always
+    ports:
+      - 5000:5432
+    environment:
+      POSTGRES_DB: NextWebApp
+      POSTGRES_PASSWORD: byronodmon
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  adminer:
+    container_name: Next-Adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  pgdata:

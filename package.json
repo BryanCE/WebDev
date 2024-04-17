@@ -1,0 +1,48 @@
+{
+  "name": "nummanip-next-react",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "node seed.js"
+  },
+  "prisma": {
+    "seed": "node ./prisma/seed.js"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mapbox/mapbox-gl-directions": "^4.3.1",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
+    "@mui/material-nextjs": "^5.15.11",
+    "@mui/x-data-grid": "^6.19.10",
+    "@prisma/client": "^5.12.1",
+    "@stadiamaps/maplibre-search-box": "^1.0.1",
+    "@types/mapbox-gl": "^3.1.0",
+    "fs": "^0.0.1-security",
+    "mapbox-gl": "^3.2.0",
+    "maplibre-gl": "^4.1.2",
+    "next": "14.1.4",
+    "pocketbase": "^0.21.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-map-gl": "^7.1.7",
+    "react-router": "^6.22.3",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8",
+    "prettier": "^3.1.0",
+    "prettier-eslint": "^16.1.2",
+    "prisma": "^5.12.1",
+    "tailwindcss": "^3.3.0"
+  }
+}
