@@ -36,10 +36,10 @@ export default function Map() {
       .addTo(map.current);
   }, [API_KEY, lng, lat, zoom]);
 
-  useEffect(() => {
-    // cleanup
-    return () => map.current.remove();
-  }, []);
+  // useEffect(() => {
+  //   // cleanup
+  //   return () => map.current.remove();
+  // }, []);
 
   return (
     <Grid container>
