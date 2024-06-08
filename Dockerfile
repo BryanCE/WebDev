@@ -32,8 +32,8 @@ COPY --from=builder /app/package.json ./package.json
 
 USER next.js
 
-EXPOSE 3333
+EXPOSE 3000
 
-ENV PORT 3333
+ENV PORT 3000
 
 CMD {"npm", "start"}
