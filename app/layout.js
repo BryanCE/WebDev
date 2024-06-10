@@ -4,7 +4,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./theme";
-import SearchAppBar from "./components/navBar";
+import Navbar from "./components/navBar";
 import { SessionProvider } from "next-auth/react";
 
 export default function RootLayout(props) {
@@ -16,7 +16,7 @@ export default function RootLayout(props) {
             <ThemeProvider theme={theme}>
               {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
               <CssBaseline />
-              <SearchAppBar></SearchAppBar>
+              <Navbar></Navbar>
               {props.children}
             </ThemeProvider>
           </AppRouterCacheProvider>

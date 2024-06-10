@@ -55,7 +55,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-function SearchAppBar() {
+function Navbar() {
   const [date, setDate] = useState("");
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -157,4 +157,4 @@ function SearchAppBar() {
     </Box>
   );
 }
-export default SearchAppBar;
+export default Navbar;
