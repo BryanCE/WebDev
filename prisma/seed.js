@@ -5,10 +5,11 @@ async function seedDatabase() {
   try {
     // Define user data
     const newUser = {
-      name: "John Doe",
+      username: "John Doe",
       email: "john.doe@example.com",
       password: "password123",
     };
+
 
     // Define product data
     const newProduct = {
