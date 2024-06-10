@@ -104,6 +104,14 @@ function SearchAppBar() {
               <MenuItem
                 onClick={handleClose}
                 component={Link}
+                href="/"
+                LinkComponent={Link}
+              >
+                Home
+              </MenuItem>
+              <MenuItem
+                onClick={handleClose}
+                component={Link}
                 href="/about"
                 LinkComponent={Link}
               >
